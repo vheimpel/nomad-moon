@@ -10,8 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-	<section class="hero">
+
+	<section class="hero" style="<?php if( get_field('hero_image') ): ?>
+		background-image: url(<?php the_field('hero_image'); ?>);
+	<?php endif; ?>">
 		<div class="hero-content">
 			
 			<h1><?php the_title(); ?></h1>
@@ -21,9 +23,10 @@
 			<?php endif; ?>
 
 			<?php if( get_field('date') ): ?>
-				<p><?php the_field('date'); ?></p>
+				<!-- Convert date to readable format -->
+				<p><?php echo date("F Y", strtotime(get_field('date'))); ?></p>
 			<?php endif; ?>
-		
+	
 		</div>
 	</section>
 
