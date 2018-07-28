@@ -14,10 +14,11 @@
 	<section class="hero">
 		<div class="hero-content">
 			<h1><?php the_title(); ?></h1>
+			<?php if( get_field('subhead') ); ?>
+				<p><?php the_field('subhead'); ?></p>
+			<?php endif; ?>
 		</div>
 	</section>
-
-
 
 	<header class="entry-header">
 	</header><!-- .entry-header -->
