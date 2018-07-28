@@ -13,10 +13,17 @@
 	
 	<section class="hero">
 		<div class="hero-content">
+			
 			<h1><?php the_title(); ?></h1>
-			<?php if( get_field('subhead') ); ?>
+			
+			<?php if( get_field('subhead') ): ?>
 				<p><?php the_field('subhead'); ?></p>
 			<?php endif; ?>
+
+			<?php if( get_field('date') ): ?>
+				<p><?php the_field('date'); ?></p>
+			<?php endif; ?>
+		
 		</div>
 	</section>
 
