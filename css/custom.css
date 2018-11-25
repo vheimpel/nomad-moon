@@ -1,8 +1,25 @@
 body {
-    
+    font-family: 'Cardo', georgia, serif;
+    font-size: 18px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
 }
+
+.archivo {
+    font-family: 'Archivo Black', sans-serif;
+}
+    
+.tenor {
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.cardo {
+    font-family: 'Cardo', serif;
+}
+
 
 .hero-heading,
 .hero-subhead {
     font-size: 64px;
 }
+

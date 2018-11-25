@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cardo:400,400i,700|Tenor+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 	<?php wp_head(); ?>
 </head>

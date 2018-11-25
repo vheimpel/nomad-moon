@@ -16,15 +16,15 @@
 	<?php endif; ?>">
 		<div class="hero-content white tc">
 			
-			<h1 class="hero-heading b ma0 mb3 ttu"><?php the_title(); ?></h1>
+			<h1 class="hero-heading archivo b ma0 mb3 ttu"><?php the_title(); ?></h1>
 			
 			<?php if( get_field('subhead') ): ?>
-				<p class="hero-subhead mt0 ttu"><?php the_field('subhead'); ?></p>
+				<p class="hero-subhead tenor mt0 ttu"><?php the_field('subhead'); ?></p>
 			<?php endif; ?>
 
 			<?php if( get_field('date') ): ?>
 				<!-- Convert date to readable format -->
-				<p class="f6 date ma0 ttu tracked"><?php echo date("F Y", strtotime(get_field('date'))); ?></p>
+				<p class="archivo f6 date ma0 ttu tracked"><?php echo date("F Y", strtotime(get_field('date'))); ?></p>
 			<?php endif; ?>
 	
 		</div>
