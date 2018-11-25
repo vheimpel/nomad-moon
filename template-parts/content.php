@@ -11,20 +11,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<section class="hero" style="<?php if( get_field('hero_image') ): ?>
+	<section class="hero min-vh-100 cover bg-center flex items-center justify-center" style="<?php if( get_field('hero_image') ): ?>
 		background-image: url(<?php the_field('hero_image'); ?>);
 	<?php endif; ?>">
-		<div class="hero-content">
+		<div class="hero-content white tc">
 			
-			<h1><?php the_title(); ?></h1>
+			<h1 class="hero-heading b ma0 mb3 ttu"><?php the_title(); ?></h1>
 			
 			<?php if( get_field('subhead') ): ?>
-				<p><?php the_field('subhead'); ?></p>
+				<p class="hero-subhead mt0 ttu"><?php the_field('subhead'); ?></p>
 			<?php endif; ?>
 
 			<?php if( get_field('date') ): ?>
 				<!-- Convert date to readable format -->
-				<p><?php echo date("F Y", strtotime(get_field('date'))); ?></p>
+				<p class="f6 date ma0 ttu tracked"><?php echo date("F Y", strtotime(get_field('date'))); ?></p>
 			<?php endif; ?>
 	
 		</div>
