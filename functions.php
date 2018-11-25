@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'nomad_moon_widgets_init' );
 function nomad_moon_scripts() {
 	wp_enqueue_style( 'nomad-moon-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'nomad-moon-custom', get_template_directory_uri() . '/css/custom.css');
+
 	wp_enqueue_script( 'nomad-moon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'nomad-moon-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
